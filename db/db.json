@@ -1,0 +1,29 @@
+[
+  {
+    "routeName": "yoda",
+    "name": "Yoda",
+    "role": "Jedi Master",
+    "age": 900,
+    "forcePoints": 2000
+  },
+  {
+    "routeName": "padmeamidala",
+    "name": "Padme Amidala",
+    "role": "Politician",
+    "age": 30,
+    "forcePoints": 20
+  },
+  {
+    "routeName": "josh",
+    "name": "Josh Taylor",
+    "role": "Politician",
+    "age": 30,
+    "forcePoints": 200000
+  },
+  {
+    "name": "Rick",
+    "role": "Politician",
+    "age": 50,
+    "forcePoints": 2323232
+  }
+]
