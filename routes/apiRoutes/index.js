@@ -2,8 +2,8 @@ const express = require("express")
 const router = express.Router()
 const { readFile, writeFile } = require("../../utils/fsUtils")
 
-// Basic route that sends the user first to the AJAX Page
-// Displays all characters
+
+// (GET) returns all characters  ||  (POST) creates and returns a new character
 // localhost:3000/api/characters/
 router.get('/', async (req, res) => {
   let data = await readFile()
@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   res.json(newCharacter);
 });
 
-// Displays a single character, or returns false
+// return a single character, or returns false
 // localhost:3000/api/characters/:character
 router.get('/:character', async (req, res) => {
   const chosen = req.params.character;
@@ -25,9 +25,7 @@ router.get('/:character', async (req, res) => {
   return res.json(false);
 });
 
-// Create New Characters - takes in JSON input
-// localhost:3000/api/characters/
-router
+
 
 
 module.exports = router;
